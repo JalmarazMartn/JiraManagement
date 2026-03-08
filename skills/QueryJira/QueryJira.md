@@ -1,6 +1,6 @@
 # QueryJira Skill
 
-This skill executes a JQL (Jira Query Language) search against the configured Jira instance and returns the results formatted as a Markdown table.
+This skill executes a JQL (Jira Query Language) search against the configured Jira instance and returns the results in a console log in terminal.
 
 ## Usage
 
@@ -8,8 +8,7 @@ The skill accepts a `jiraQuery` parameter (JQL string) and an optional `fields` 
 
 **Example (Default Fields):**
 ```javascript
-const queryJira = require('./QueryJira');
-queryJira('assignee = currentUser() AND status = "In Progress"')  
+node "C:\Users\Jesus\Documents\Proyecto js\JiraManagement\skills\QueryJira\QueryJira.js" "assignee = currentUser()" "summary"
 ```
 
 ## JQL Reference

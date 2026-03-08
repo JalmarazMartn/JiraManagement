@@ -1,5 +1,5 @@
 
-function queryJira(newQuery,newFields='') {
+function queryJira(newQuery,newFields = '') {
 var request = require('request');
 const getAPIKey = require('./APIKey.json')
 const email = getAPIKey.email
@@ -25,5 +25,7 @@ request(options, function (error, response) {
 });
 
 }
+const [newQuery,newFields] = process.argv.slice(2);
 
+queryJira(newQuery,newFields);
 module.exports = queryJira;
