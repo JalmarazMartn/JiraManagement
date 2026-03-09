@@ -28,4 +28,9 @@ request(options, function (error, response) {
 const [newQuery,newFields] = process.argv.slice(2);
 
 queryJira(newQuery,newFields);
-module.exports = queryJira;
+module.exports = {
+    queryJira:  function (newQuery,newFields) {
+      queryJira(newQuery,newFields);
+    }
+  }
+
