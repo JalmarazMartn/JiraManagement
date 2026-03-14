@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jira Issues</title>
+</head>
+<body>
+
+    <h1>Jira Issues</h1>
+
+    <ul id="jira-list">
+        <!-- Jira issues will be listed here -->
+    </ul>
+
+    <script>       
+        const jql = 'assignee = "jalmarazmartn@gmail.com" AND status = Open';
+        //const apiUrl = `https://jalmarazmartn.atlassian.net/rest/api/3/search/jql?maxResults=10&jql=${encodeURIComponent(jql)}&fields=*all`;
+        const apiUrl = 'https://jalmarazmartn.atlassian.net/rest/api/3/search/jql?maxResults=10&jql=assignee%20=%20%22jalmarazmartn@gmail.com%22%20AND%20status%20=%20Open&fields=*all'
+
+        async function getJiraIssues() {
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': 'Basic ' + auth,
+                        'Accept': 'application/json',
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                const jiraList = document.getElementById('jira-list');
+
+
+                data.issues.forEach(issue => {
+                    const key = escapeHTML(issue.key);
+                    const status = escapeHTML(issue.fields.status.name);
+                    const summary = escapeHTML(issue.fields.summary);
+                    const self = escapeHTML(issue.self);
+                    const informer = issue.fields.reporter ? escapeHTML(issue.fields.reporter.displayName) : 'N/A';
+
+                    const listItem = document.createElement('li');
+                    listItem.innerHTML = `<strong>Key:</strong> ${key}<br><strong>Status:</strong> ${status}<br><strong>Summary:</strong> <a href="${self}">${summary}</a><br><strong>Informer:</strong> ${informer}<hr>`;
+                    jiraList.appendChild(listItem);
+                });
+            } catch (error) {
+                console.error('Error fetching Jira issues:', error);
+                if (error instanceof TypeError && error.message === 'Failed to fetch') {
+                    alert('Failed to fetch data. Possible CORS issue or network problem.');
+                } else {
+                    alert(`Error fetching Jira issues: ${error.message}`);
+                }
+            }
+        }
+
+        // Function to escape HTML characters
+        function escapeHTML(str) {
+            return str.replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[m]);
+        }
+
+        getJiraIssues();
+    </script>
+
+</body>
+</html>
+
+</body>
+</html>

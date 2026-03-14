@@ -1,0 +1,518 @@
+{
+    "issues": [
+        {
+            "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations,customfield_10010.requestTypePractice",
+            "id": "10037",
+            "self": "https://jalmarazmartn.atlassian.net/rest/api/3/issue/10037",
+            "key": "SOP-2",
+            "fields": {
+                "statuscategorychangedate": "2026-03-09T20:40:25.017+0100",
+                "issuetype": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/issuetype/10008",
+                    "id": "10008",
+                    "description": "Un trabajo pequeño e independiente.",
+                    "iconUrl": "https://jalmarazmartn.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10680?size=medium",
+                    "name": "Tarea",
+                    "subtask": false,
+                    "avatarId": 10680,
+                    "hierarchyLevel": 0
+                },
+                "timespent": null,
+                "customfield_10030": null,
+                "project": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/project/10001",
+                    "id": "10001",
+                    "key": "SOP",
+                    "name": "Soporte",
+                    "projectTypeKey": "service_desk",
+                    "simplified": false,
+                    "avatarUrls": {
+                        "48x48": "https://jalmarazmartn.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10401",
+                        "24x24": "https://jalmarazmartn.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10401?size=small",
+                        "16x16": "https://jalmarazmartn.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10401?size=xsmall",
+                        "32x32": "https://jalmarazmartn.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10401?size=medium"
+                    }
+                },
+                "customfield_10031": null,
+                "customfield_10032": null,
+                "fixVersions": [],
+                "customfield_10033": null,
+                "statusCategory": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "Por hacer"
+                },
+                "aggregatetimespent": null,
+                "resolution": null,
+                "customfield_10037": null,
+                "customfield_10027": null,
+                "customfield_10028": null,
+                "customfield_10029": null,
+                "resolutiondate": null,
+                "workratio": -1,
+                "lastViewed": null,
+                "watches": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/issue/SOP-2/watchers",
+                    "watchCount": 1,
+                    "isWatching": true
+                },
+                "created": "2026-03-09T20:40:23.973+0100",
+                "customfield_10020": null,
+                "customfield_10021": null,
+                "customfield_10022": null,
+                "priority": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/priority/3",
+                    "iconUrl": "https://jalmarazmartn.atlassian.net/images/icons/priorities/medium_new.svg",
+                    "name": "Medium",
+                    "id": "3"
+                },
+                "customfield_10023": null,
+                "customfield_10024": null,
+                "customfield_10025": null,
+                "labels": [],
+                "customfield_10026": null,
+                "customfield_10016": null,
+                "customfield_10017": null,
+                "customfield_10019": "0|i00013:",
+                "timeestimate": null,
+                "aggregatetimeoriginalestimate": null,
+                "versions": [],
+                "issuelinks": [],
+                "assignee": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/user?accountId=712020%3A3741b45f-7aa6-4806-9824-4f74103fd79c",
+                    "accountId": "712020:3741b45f-7aa6-4806-9824-4f74103fd79c",
+                    "emailAddress": "jalmarazmartn@gmail.com",
+                    "avatarUrls": {
+                        "48x48": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                        "24x24": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                        "16x16": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                        "32x32": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png"
+                    },
+                    "displayName": "Jesús Almaraz Martín",
+                    "active": true,
+                    "timeZone": "Europe/Madrid",
+                    "accountType": "atlassian"
+                },
+                "updated": "2026-03-09T20:40:25.180+0100",
+                "status": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/status/1",
+                    "description": "La actividad está abierta y lista para que la persona asignada empiece a trabajar en ella.",
+                    "iconUrl": "https://jalmarazmartn.atlassian.net/images/icons/statuses/open.png",
+                    "name": "Abierta",
+                    "id": "1",
+                    "statusCategory": {
+                        "self": "https://jalmarazmartn.atlassian.net/rest/api/3/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "Por hacer"
+                    }
+                },
+                "components": [],
+                "customfield_10050": null,
+                "customfield_10051": null,
+                "timeoriginalestimate": null,
+                "customfield_10052": null,
+                "customfield_10053": null,
+                "description": {
+                    "type": "doc",
+                    "version": 1,
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Nuevo sistema de escribir comentarios"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "customfield_10054": null,
+                "customfield_10010": null,
+                "customfield_10055": null,
+                "customfield_10056": null,
+                "customfield_10014": null,
+                "customfield_10015": null,
+                "timetracking": {},
+                "customfield_10049": [],
+                "customfield_10005": null,
+                "customfield_10006": null,
+                "customfield_10007": null,
+                "security": null,
+                "customfield_10008": null,
+                "aggregatetimeestimate": null,
+                "attachment": [],
+                "customfield_10009": null,
+                "summary": "Nuevo sistema de escribir comentarios",
+                "creator": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/user?accountId=712020%3A3741b45f-7aa6-4806-9824-4f74103fd79c",
+                    "accountId": "712020:3741b45f-7aa6-4806-9824-4f74103fd79c",
+                    "emailAddress": "jalmarazmartn@gmail.com",
+                    "avatarUrls": {
+                        "48x48": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                        "24x24": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                        "16x16": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                        "32x32": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png"
+                    },
+                    "displayName": "Jesús Almaraz Martín",
+                    "active": true,
+                    "timeZone": "Europe/Madrid",
+                    "accountType": "atlassian"
+                },
+                "subtasks": [],
+                "customfield_10040": [],
+                "customfield_10041": null,
+                "customfield_10042": null,
+                "customfield_10043": {
+                    "languageCode": "en",
+                    "displayName": "inglés"
+                },
+                "reporter": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/user?accountId=712020%3A3741b45f-7aa6-4806-9824-4f74103fd79c",
+                    "accountId": "712020:3741b45f-7aa6-4806-9824-4f74103fd79c",
+                    "emailAddress": "jalmarazmartn@gmail.com",
+                    "avatarUrls": {
+                        "48x48": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                        "24x24": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                        "16x16": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                        "32x32": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png"
+                    },
+                    "displayName": "Jesús Almaraz Martín",
+                    "active": true,
+                    "timeZone": "Europe/Madrid",
+                    "accountType": "atlassian"
+                },
+                "aggregateprogress": {
+                    "progress": 0,
+                    "total": 0
+                },
+                "customfield_10044": null,
+                "customfield_10045": null,
+                "customfield_10001": null,
+                "customfield_10046": null,
+                "customfield_10002": [],
+                "customfield_10047": null,
+                "customfield_10003": null,
+                "customfield_10048": null,
+                "customfield_10004": null,
+                "customfield_10038": null,
+                "customfield_10039": null,
+                "environment": null,
+                "duedate": "2026-03-09",
+                "progress": {
+                    "progress": 0,
+                    "total": 0
+                },
+                "votes": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/issue/SOP-2/votes",
+                    "votes": 0,
+                    "hasVoted": false
+                },
+                "comment": {
+                    "comments": [],
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/issue/10037/comment",
+                    "maxResults": 0,
+                    "total": 0,
+                    "startAt": 0
+                },
+                "worklog": {
+                    "startAt": 0,
+                    "maxResults": 20,
+                    "total": 0,
+                    "worklogs": []
+                }
+            }
+        },
+        {
+            "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations,customfield_10010.requestTypePractice",
+            "id": "10004",
+            "self": "https://jalmarazmartn.atlassian.net/rest/api/3/issue/10004",
+            "key": "SOP-1",
+            "fields": {
+                "statuscategorychangedate": "2026-03-08T06:52:05.691+0100",
+                "issuetype": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/issuetype/10008",
+                    "id": "10008",
+                    "description": "Un trabajo pequeño e independiente.",
+                    "iconUrl": "https://jalmarazmartn.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10680?size=medium",
+                    "name": "Tarea",
+                    "subtask": false,
+                    "avatarId": 10680,
+                    "hierarchyLevel": 0
+                },
+                "timespent": null,
+                "customfield_10030": null,
+                "project": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/project/10001",
+                    "id": "10001",
+                    "key": "SOP",
+                    "name": "Soporte",
+                    "projectTypeKey": "service_desk",
+                    "simplified": false,
+                    "avatarUrls": {
+                        "48x48": "https://jalmarazmartn.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10401",
+                        "24x24": "https://jalmarazmartn.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10401?size=small",
+                        "16x16": "https://jalmarazmartn.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10401?size=xsmall",
+                        "32x32": "https://jalmarazmartn.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10401?size=medium"
+                    }
+                },
+                "customfield_10031": null,
+                "customfield_10032": null,
+                "fixVersions": [],
+                "customfield_10033": null,
+                "statusCategory": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "Por hacer"
+                },
+                "aggregatetimespent": null,
+                "resolution": null,
+                "customfield_10037": null,
+                "customfield_10027": null,
+                "customfield_10028": null,
+                "customfield_10029": null,
+                "resolutiondate": null,
+                "workratio": -1,
+                "lastViewed": "2026-03-09T21:20:26.326+0100",
+                "watches": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/issue/SOP-1/watchers",
+                    "watchCount": 1,
+                    "isWatching": true
+                },
+                "created": "2026-03-08T06:52:05.132+0100",
+                "customfield_10020": null,
+                "customfield_10021": null,
+                "customfield_10022": null,
+                "priority": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/priority/3",
+                    "iconUrl": "https://jalmarazmartn.atlassian.net/images/icons/priorities/medium_new.svg",
+                    "name": "Medium",
+                    "id": "3"
+                },
+                "customfield_10023": null,
+                "customfield_10024": null,
+                "customfield_10025": null,
+                "labels": [],
+                "customfield_10026": null,
+                "customfield_10016": null,
+                "customfield_10017": null,
+                "customfield_10019": "0|i0000v:",
+                "timeestimate": null,
+                "aggregatetimeoriginalestimate": null,
+                "versions": [],
+                "issuelinks": [],
+                "assignee": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/user?accountId=712020%3A3741b45f-7aa6-4806-9824-4f74103fd79c",
+                    "accountId": "712020:3741b45f-7aa6-4806-9824-4f74103fd79c",
+                    "emailAddress": "jalmarazmartn@gmail.com",
+                    "avatarUrls": {
+                        "48x48": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                        "24x24": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                        "16x16": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                        "32x32": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png"
+                    },
+                    "displayName": "Jesús Almaraz Martín",
+                    "active": true,
+                    "timeZone": "Europe/Madrid",
+                    "accountType": "atlassian"
+                },
+                "updated": "2026-03-09T21:19:09.121+0100",
+                "status": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/status/1",
+                    "description": "La actividad está abierta y lista para que la persona asignada empiece a trabajar en ella.",
+                    "iconUrl": "https://jalmarazmartn.atlassian.net/images/icons/statuses/open.png",
+                    "name": "Abierta",
+                    "id": "1",
+                    "statusCategory": {
+                        "self": "https://jalmarazmartn.atlassian.net/rest/api/3/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "blue-gray",
+                        "name": "Por hacer"
+                    }
+                },
+                "components": [],
+                "customfield_10050": null,
+                "customfield_10051": null,
+                "timeoriginalestimate": null,
+                "customfield_10052": {
+                    "errorMessage": "metric not found"
+                },
+                "customfield_10053": {
+                    "errorMessage": "metric not found"
+                },
+                "description": {
+                    "type": "doc",
+                    "version": 1,
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Se requiere una desarrollo en JavaScript para gestionar tareas con Jira."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "customfield_10054": {
+                    "errorMessage": "metric not found"
+                },
+                "customfield_10010": null,
+                "customfield_10055": null,
+                "customfield_10056": null,
+                "customfield_10014": null,
+                "customfield_10015": null,
+                "timetracking": {},
+                "customfield_10049": [],
+                "customfield_10005": null,
+                "customfield_10006": null,
+                "customfield_10007": null,
+                "security": null,
+                "customfield_10008": null,
+                "aggregatetimeestimate": null,
+                "attachment": [],
+                "customfield_10009": null,
+                "summary": "Crear API para introducir comentarios en las tareas",
+                "creator": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/user?accountId=712020%3A3741b45f-7aa6-4806-9824-4f74103fd79c",
+                    "accountId": "712020:3741b45f-7aa6-4806-9824-4f74103fd79c",
+                    "emailAddress": "jalmarazmartn@gmail.com",
+                    "avatarUrls": {
+                        "48x48": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                        "24x24": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                        "16x16": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                        "32x32": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png"
+                    },
+                    "displayName": "Jesús Almaraz Martín",
+                    "active": true,
+                    "timeZone": "Europe/Madrid",
+                    "accountType": "atlassian"
+                },
+                "subtasks": [],
+                "customfield_10040": [],
+                "customfield_10041": null,
+                "customfield_10042": null,
+                "customfield_10043": {
+                    "languageCode": "en",
+                    "displayName": "inglés"
+                },
+                "reporter": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/user?accountId=712020%3A3741b45f-7aa6-4806-9824-4f74103fd79c",
+                    "accountId": "712020:3741b45f-7aa6-4806-9824-4f74103fd79c",
+                    "emailAddress": "jalmarazmartn@gmail.com",
+                    "avatarUrls": {
+                        "48x48": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                        "24x24": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                        "16x16": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                        "32x32": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png"
+                    },
+                    "displayName": "Jesús Almaraz Martín",
+                    "active": true,
+                    "timeZone": "Europe/Madrid",
+                    "accountType": "atlassian"
+                },
+                "aggregateprogress": {
+                    "progress": 0,
+                    "total": 0
+                },
+                "customfield_10044": null,
+                "customfield_10045": null,
+                "customfield_10001": null,
+                "customfield_10046": null,
+                "customfield_10002": [],
+                "customfield_10047": null,
+                "customfield_10003": null,
+                "customfield_10048": null,
+                "customfield_10004": null,
+                "customfield_10038": null,
+                "customfield_10039": null,
+                "environment": null,
+                "duedate": null,
+                "progress": {
+                    "progress": 0,
+                    "total": 0
+                },
+                "votes": {
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/issue/SOP-1/votes",
+                    "votes": 0,
+                    "hasVoted": false
+                },
+                "comment": {
+                    "comments": [
+                        {
+                            "self": "https://jalmarazmartn.atlassian.net/rest/api/3/issue/10004/comment/10000",
+                            "id": "10000",
+                            "author": {
+                                "self": "https://jalmarazmartn.atlassian.net/rest/api/3/user?accountId=712020%3A3741b45f-7aa6-4806-9824-4f74103fd79c",
+                                "accountId": "712020:3741b45f-7aa6-4806-9824-4f74103fd79c",
+                                "emailAddress": "jalmarazmartn@gmail.com",
+                                "avatarUrls": {
+                                    "48x48": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                                    "24x24": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                                    "16x16": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                                    "32x32": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png"
+                                },
+                                "displayName": "Jesús Almaraz Martín",
+                                "active": true,
+                                "timeZone": "Europe/Madrid",
+                                "accountType": "atlassian"
+                            },
+                            "body": {
+                                "type": "doc",
+                                "version": 1,
+                                "content": [
+                                    {
+                                        "type": "paragraph",
+                                        "content": [
+                                            {
+                                                "type": "text",
+                                                "text": "Already testing creating comments"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "updateAuthor": {
+                                "self": "https://jalmarazmartn.atlassian.net/rest/api/3/user?accountId=712020%3A3741b45f-7aa6-4806-9824-4f74103fd79c",
+                                "accountId": "712020:3741b45f-7aa6-4806-9824-4f74103fd79c",
+                                "emailAddress": "jalmarazmartn@gmail.com",
+                                "avatarUrls": {
+                                    "48x48": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                                    "24x24": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                                    "16x16": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png",
+                                    "32x32": "https://secure.gravatar.com/avatar/20803ded1d2e1ae1e9f17c9e0a95fc15?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJM-4.png"
+                                },
+                                "displayName": "Jesús Almaraz Martín",
+                                "active": true,
+                                "timeZone": "Europe/Madrid",
+                                "accountType": "atlassian"
+                            },
+                            "created": "2026-03-08T21:14:05.086+0100",
+                            "updated": "2026-03-08T21:14:05.086+0100",
+                            "jsdPublic": true
+                        }
+                    ],
+                    "self": "https://jalmarazmartn.atlassian.net/rest/api/3/issue/10004/comment",
+                    "maxResults": 1,
+                    "total": 1,
+                    "startAt": 0
+                },
+                "worklog": {
+                    "startAt": 0,
+                    "maxResults": 20,
+                    "total": 0,
+                    "worklogs": []
+                }
+            }
+        }
+    ],
+    "isLast": true
+}

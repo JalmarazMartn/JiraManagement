@@ -6,17 +6,20 @@ const email = getAPIKey.email
 const domain = getAPIKey.domain
 const apiToken = getAPIKey.APIKey
 const auth = Buffer.from(`${email}:${apiToken}`).toString('base64');
+const cookie =getAPIKey.cookie
 var fieldQuery = ''
 if (newFields !== '')
 {
   fieldQuery = '&fields=' + newFields
 }
+const url = domain + '/rest/api/3/search/jql?maxResults=10&jql=' + newQuery + fieldQuery;
 var options = {
   'method': 'GET',
-  'url': 'https://jalmarazmartn.atlassian.net/rest/api/3/search/jql?maxResults=10&jql=' + newQuery + fieldQuery,
-  'headers': {
-    'Authorization': 'Basic ' + auth,
- 'Cookie': 'atlassian.xsrf.token=b432176c56d2fb833ac40a4b2fbd39548a07c836_lin'    
+  'url':  url,
+  'headers': {    
+//    'Authorization': 'Basic ' + auth,    
+  'Cookie': cookie
+  //"cookie" : "tenant.session.token=eyJraWQiO Muestra
   }
 };
 request(options, function (error, response) {
@@ -26,8 +29,10 @@ request(options, function (error, response) {
 
 }
 const [newQuery,newFields] = process.argv.slice(2);
-
-queryJira(newQuery,newFields);
+if (newQuery)
+{
+  queryJira(newQuery,newFields);
+}  
 module.exports = {
     queryJira:  function (newQuery,newFields) {
       queryJira(newQuery,newFields);
