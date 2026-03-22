@@ -2,7 +2,7 @@ const request = require('request');
 
 function addJiraComment(issueKey, commentText) {
     const getAPIKey = require('./APIKey.json');
-    const { email, domain, APIKey: apiToken } = getAPIKey;
+    const { email, domain, APIKey: apiToken,cookie} = getAPIKey;
     const auth = Buffer.from(`${email}:${apiToken}`).toString('base64');
 
     const url = `${domain}/rest/api/3/issue/${issueKey}/comment`;
@@ -30,12 +30,18 @@ function addJiraComment(issueKey, commentText) {
         method: 'POST',
         url: url,
         headers: {
-            'Authorization': 'Basic ' + auth,
+            //'Authorization': 'Basic ' + auth,
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(bodyData)
     };
+    if (apiToken && apiToken.trim() !== '') {
+    options.headers['Authorization'] = 'Basic ' + auth;
+    } else {
+    options.headers['Cookie'] = cookie;//Ejemplo "cookie" : "tenant.session.token=eyJraWQiO 
+    }
+
 
     request(options, function (error, response, body) {
         if (error) {
