@@ -19,12 +19,15 @@ const url = domain + '/rest/api/3/search/jql?maxResults=10&jql=' + newQuery + fi
 var options = {
   'method': 'GET',
   'url':  url,
-  'headers': {    
-//    'Authorization': 'Basic ' + auth,    
-  'Cookie': cookie
-  //"cookie" : "tenant.session.token=eyJraWQiO Muestra
+  'headers': {
   }
 };
+
+if (apiToken && apiToken.trim() !== '') {
+  options.headers['Authorization'] = 'Basic ' + auth;
+} else {
+  options.headers['Cookie'] = cookie;//Ejemplo "cookie" : "tenant.session.token=eyJraWQiO 
+}
 request(options, function (error, response) {
   if (error) {
     console.error('Error making request:', error);
