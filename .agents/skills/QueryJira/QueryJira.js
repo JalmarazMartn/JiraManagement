@@ -9,7 +9,11 @@ const cookie =getAPIKey.cookie
 var fieldQuery = ''
 if (newFields)
 {
-  fieldQuery = '&fields=' + newFields
+  fieldQuery = '&fields=key,' + newFields
+}
+else
+{
+  fieldQuery = '&fields=key'
 }
 const url = domain + '/rest/api/3/search/jql?maxResults=10&jql=' + newQuery + fieldQuery;
 var options = {

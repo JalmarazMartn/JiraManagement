@@ -24,11 +24,12 @@ node ".\QueryJira.js" "<jql_query>" "[optional_fields]"
 | "What's in Project OP?" | `"project = 'OP'"` |
 | "What did I finish this week?" | `"resolved >= startOfWeek() AND assignee = currentUser()"` |
 | "Find tasks updated today" | `"updated >= startOfDay()"` |
+| "Open my open tasks" | `"assignee = currentUser() AND status not in ('Done', 'Closed', 'Resolved')"` |
 
 ## Technical Details
 * **Authentication:** The script automatically pulls your `email`, `domain`, and `cookie` (or `APIKey`) from `APIKey.json`.
 * **Output Format:** Results are logged as formatted strings including the **Key**, **Status**, **Summary** (with a clickable URL), and Reporter. Aditionally brings a second JSON object, with task key and URL to open in browser.
-* **Field Filtering:** You can customize output by passing a second argument like `"summary,priority,created"`.
+* **Field Filtering:** You can customize output by passing a second argument like `"summary,priority,created"`. The `key` field is always included in the query to ensure the URL can be generated.
 
 ## JQL Reference for Translation
 
@@ -46,3 +47,11 @@ node ".\QueryJira.js" "<jql_query>" "[optional_fields]"
 ## Troubleshooting
 * **Empty Results (`{"issues":[]}`):** Verify the project key exists and that your account has "Browse Projects" permission.
 * **Cookie Expiry:** If using a session cookie, ensure it is still valid by checking the `Application > Cookies` tab in your browser's Developer 
+
+## Opening Tasks in the Browser
+After running a query, the script will output a list of issues, including a `clientUrl` for each. You can use this URL to open the task directly in your default web browser.
+
+On Windows, you can use the `start` command in your terminal:
+```bash
+start https://jalmarazmartn.atlassian.net/browse/SOP-2
+```
