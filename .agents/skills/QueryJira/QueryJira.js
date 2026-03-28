@@ -72,11 +72,18 @@ function logJiraFields(data) {
         const domain = getAPIKey.domain
         const issue = data.issues[i];
         const key = escapeHTML(issue.key);
+        let summary  = '';
+        if (issue.fields.summary)
+        {
+          summary = issue.fields.summary;
+        }
         listJiraItem.push()
         const self =  domain + '/browse/' + key; // URL should not be escaped
+        if (issue.fields.summary)
         JiraItem = {
           "key" : key,
-          "clientUrl" : self
+          "clientUrl" : self,
+          "summary" : summary,
         }
         listJiraItem.push(JiraItem)
     }
